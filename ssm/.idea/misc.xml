@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/springMVC_day01" />
+    <file type="web" url="file://$PROJECT_DIR$/springMVC_day02" />
+    <file type="web" url="file://$PROJECT_DIR$/springMVC_day02_exception" />
+    <file type="web" url="file://$PROJECT_DIR$/springMVC_day02_fileupload" />
+    <file type="web" url="file://$PROJECT_DIR$/springMVC_day02_interceptor" />
+    <file type="web" url="file://$PROJECT_DIR$/springMVC_day02_response" />
+    <file type="web" url="file://$PROJECT_DIR$/ss" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/mybatis_day01/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_day1_design/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_day02/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_dao/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_day03/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_day04/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_day04_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day01_factory/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day01/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day02/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day02_case/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day02_case_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day02_case_withoutxml/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day03_AOP/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day03_annotation_AOP/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day04_tx_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day04_tx_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/springMVC_day01/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day03_account/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_day04_tx_onlyAnno/pom.xml" />
+        <option value="$PROJECT_DIR$/springMVC_day02_response/pom.xml" />
+        <option value="$PROJECT_DIR$/springMVC_day02_fileupload/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/springMVC_day02_exception/pom.xml" />
+        <option value="$PROJECT_DIR$/springMVC_day02_interceptor/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectResources">
+    <resource url="http://code.alibabatech.com/schema/dubbo/dubbo.xsd" location="E:/dtd-schema/dubbo.xsd" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 第一种方式：使用默认构造函数创建。
+            在spring的配置文件中使用bean标签，配以id和class属性之后，且没有其他属性和标签时。
+            采用的就是默认构造函数创建bean对象，此时如果类中没有默认构造函数，则对象无法创建。
+        <bean id="accountService" class="cn.itcast.service.impl.AccountServiceImpl"/>
+     -->
+
+
+    <!-- 第二种方式： 使用普通工厂中的方法创建对象（使用某个类中的方法创建对象，并存入spring容器）
+        <bean id="instanceFactory" class="cn.itcast.factory.InstanceFactory" ></bean>
+        <bean id="accountService" factory-bean="instanceFactory" factory-method="getAccountService"/>
+     -->
+
+    <!-- 第三种方式：使用工厂中的静态方法创建对象（使用某个类中的静态方法创建对象，并存入spring容器)
+        <bean id="accountService" class="cn.itcast.factory.StaticFactory" factory-method="getAccountService"></bean>
+     -->
+
+    <!--<bean id="accountService" class="cn.itcast.service.impl.AccountServiceImpl" init-method="init" destroy-method="destroy" scope="singleton"></bean>-->
+
+
+    <!--==========================================================================================================- -->
+    <!--依赖注入-构造方法-->
+    <!--<bean id="accountService" class="cn.itcast.service.impl.AccountServiceImpl" >
+        <constructor-arg name="name" value="罗洲"></constructor-arg>
+        <constructor-arg name="age" value="18"></constructor-arg>
+        <constructor-arg name="date" ref="now"></constructor-arg>
+    </bean>-->
+
+    <!--依赖注入-set方法
+    <bean id="accountService" class="cn.itcast.service.impl.AccountServiceImpl" >
+        <property name="name" value="罗洲"></property>
+        <property name="age" value="21"></property>
+        <property name="date" ref="now"></property>
+    </bean>-->
+    <bean id="now" class="java.util.Date"></bean>
+
+    <bean id="accountService" class="cn.itcast.service.impl.AccountServiceImpl">
+        <!--数组-->
+        <property name="myStrs">
+            <set>
+                <value>罗洲</value>
+                <value>胖虎</value>
+                <value>托尼老师</value>
+            </set>
+        </property>
+        <!--List集合-->
+        <property name="myList">
+            <array>
+                <value>罗洲</value>
+                <value>胖虎</value>
+                <value>托尼老师</value>
+            </array>
+        </property>
+        <!--set集合-->
+        <property name="mySet">
+            <list>
+                <value>罗洲</value>
+                <value>胖虎</value>
+                <value>托尼老师</value>
+            </list>
+        </property>
+        <!--map集合-->
+        <property name="myMap">
+            <props>
+                <prop key="1">罗洲</prop>
+                <prop key="2">胖虎</prop>
+                <prop key="3">托尼老师</prop>
+            </props>
+        </property>
+        <!--properties-->
+        <property name="myPros">
+            <map key-type="java.lang.String" value-type="java.lang.String">
+                <entry key="1" value="罗洲"></entry>
+                <entry key="2">
+                    <value>胖虎</value>
+                </entry>
+                <entry key="3" value="托尼老师"></entry>
+            </map>
+        </property>
+    </bean>
+</beans>
